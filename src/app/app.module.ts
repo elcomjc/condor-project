@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { ReferenceInputComponent } from './reference-input/reference-input.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ReferenceInputComponent
   ],
   imports: [
     BrowserModule,
