@@ -1,0 +1,4 @@
+.body > app-tracking-info {
+  flex: 1 0 auto;
+  max-width: 60%;
+}

@@ -1,0 +1,4 @@
+.body > app-reference-input {
+  flex: 1 0 auto;
+  max-width: 60%;
+}

@@ -1,0 +1,165 @@
+.widget {
+  flex: 1 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.widget > header {
+  flex: 0 0 auto;
+  text-align: center;
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.widget > header > .logo {
+  max-width: 45%;
+}
+
+.widget > .body {
+  flex: 2 0 auto;
+  background-color: #D8E1E8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.widget > .body > .reference-info {
+  flex: 0 1 auto;
+  text-align: center;
+  color: #282830;
+  font-size: 1em;
+  padding: 5px;
+}
+
+.reference-id {
+  color: #d35400;
+}
+
+.widget > .body > .content-info {
+  flex: 1 0 auto;
+  width: 100%;
+  padding: 5px 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.widget > .body > .content-info > .left-container {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 5px;
+}
+
+.widget > .body > .content-info > .left-container > .relevant-info {
+  flex: 0 0 auto;
+}
+
+.widget > .body > .content-info > .left-container > .timeline-events {
+  flex: 2 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #16a085;
+  margin-left: 40px;
+  min-height: 300px;
+  padding: 10px 0;
+  border-radius: 3px;
+}
+
+.timeline-events > .event {
+  flex: 1 0 auto;
+  display: flex;
+  padding: 0 10px;
+}
+
+.event > .left-side {
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.left-side > .circle {
+  flex: 0 0 auto;
+  background-color: #c0392b;
+  border-radius: 50%;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  width: 30px;
+  padding-top: 5px;
+  height: 25px;
+}
+
+.left-side > .line {
+  flex: 1 1 auto;
+  width: 2px;
+  background-color: white;
+}
+
+.event > .right-side {
+  flex: 1 0 auto;
+  color: white;
+  margin-left: 10px;
+  padding-top: 5px;
+}
+
+.right-side.middle{
+  align-self: center;
+}
+
+.right-side.first{
+  align-self: flex-start;
+}
+
+.right-side.last{
+  align-self: flex-end;
+  padding-bottom: 5px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+li > i{
+  flex: 0 0 auto;
+  margin-right: 5px;
+}
+
+li > span{
+  flex: 1 0 auto;
+}
+
+.widget > .body > .content-info > .right-container {
+  flex: 1 0 auto;
+  min-width: 50%;
+  margin-right: 5px;
+}
+
+.right-container > .map-container {
+  height: 100%;
+}
+
+.sebm-google-map-container {
+  height: 100%;
+}
+
+.widget > footer {
+  flex: 0 0 auto;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}

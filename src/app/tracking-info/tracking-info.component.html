@@ -1,0 +1,85 @@
+<div class="widget">
+  <header>
+    <img class="logo" src="https://app2.simpliroute.com/assets/images/logo_oficial.png" alt="">
+  </header>
+  <section class="body">
+    <div class="reference-info">
+      <h2>Información de tracking de la referencia: <span class="reference-id">{{referenceId}}</span></h2>
+    </div>
+    <div class="content-info">
+      <div class="left-container">
+        <div class="relevant-info">
+          <ul>
+            <li>
+              <i class="material-icons">schedule</i>
+              <span>Hora estimada de entrega: 10:30 am</span>
+            </li>
+            <hr />
+            <li>
+              <i class="material-icons">info</i>
+              <span>En tiempo para entrega en hora estimada</span>
+            </li>
+          </ul>
+        </div>
+        <div class="timeline-events">
+          <div class="event">
+            <div class="left-side">
+              <div class="circle">
+                1
+              </div>
+              <div class="line"></div>
+            </div>
+            <div class="right-side first">
+              9:00 - Pedido entregado a repartidor
+            </div>
+          </div>
+          <div class="event">
+            <div class="left-side">
+              <div class="line"></div>
+              <div class="circle">
+                2
+              </div>
+              <div class="line"></div>
+            </div>
+            <div class="right-side middle">
+              9:30 - Pedido salió de bodega
+            </div>
+          </div>
+          <div class="event">
+            <div class="left-side">
+              <div class="line"></div>
+              <div class="circle">
+                3
+              </div>
+              <div class="line"></div>
+            </div>
+            <div class="right-side middle">
+              9:45 - Conductor se comunicó con el cliente
+            </div>
+          </div>
+          <div class="event">
+            <div class="left-side">
+              <div class="line"></div>
+              <div class="circle">
+                4
+              </div>
+            </div>
+            <div class="right-side last">
+              10:20 - Tu pedido está cerca, pendiente!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="map-container">
+          <sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+            <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
+          </sebm-google-map>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    SimpliAdviser: `Ten en cuenta que el tráfico de tu ciudad no siempre es el mismo.`
+  </footer>
+</div>

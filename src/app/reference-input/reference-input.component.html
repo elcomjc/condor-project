@@ -1,10 +1,15 @@
 <div class="widget">
   <header>
-    ¿Donde esta mi pedido?
+    <img class="logo" src="https://app2.simpliroute.com/assets/images/logo_oficial.png" alt="">
   </header>
   <section class="body">
-    <h2>Ingresa el número de referencia</h2>
-    <input type="text">
+    <div class="slogan">
+      ¿Donde está mi pedido?
+    </div>
+    <md-input-container>
+      <input #myInput mdInput placeholder="Número de referencia">
+    </md-input-container>
+    <button class="submit-button" (click)="goToTrack(myInput.value)" md-raised-button>buscar</button>
   </section>
   <footer>
     Ejemplo: ABC14526FFF
